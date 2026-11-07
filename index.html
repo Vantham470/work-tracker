@@ -79,7 +79,7 @@ li .status{width:auto;flex:none;padding:6px 8px}
     <input type="text" id="queue" placeholder="Queue" aria-label="Queue" maxlength="80">
     <input type="text" id="frame" placeholder="Frame" aria-label="Frame" maxlength="80">
     <select id="position" aria-label="Position">
-      <option value="review">Review</option>
+      <option value="review">Review Skip</option>
       <option value="fp">First pass (FP)</option>
       <option value="qa">QA</option>
     </select>
@@ -111,7 +111,7 @@ li .status{width:auto;flex:none;padding:6px 8px}
 (function(){
   var KEY="work-task-tracker-v1", tasks=[], filter="all";
   var ST=[["working","In progress"],["pending","Pending"],["submitted","Submitted"],["skipped","Skipped"]];
-  var PL={review:"Review",fp:"First pass (FP)",qa:"QA"};
+  var PL={review:"Review Skip",fp:"First pass (FP)",qa:"QA"};
   var $=function(id){return document.getElementById(id)};
 
   function load(){
